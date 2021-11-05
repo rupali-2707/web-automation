@@ -22,3 +22,6 @@ driver=webdriver.Chrome(service=service,options=options,desired_capabilities=cap
 
 
 driver.get("https://whatismyipaddress.com")
+
+
+
