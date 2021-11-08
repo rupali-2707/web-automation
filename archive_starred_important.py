@@ -131,9 +131,7 @@ var config = {
           bypassList: ["localhost"]
         }
       };
-
 chrome.proxy.settings.set({value: config, scope: "regular"}, function() {});
-
 function callbackFn(details) {
     return {
         authCredentials: {
@@ -142,7 +140,6 @@ function callbackFn(details) {
         }
     };
 }
-
 chrome.webRequest.onAuthRequired.addListener(
             callbackFn,
             {urls: ["<all_urls>"]},
@@ -198,6 +195,3 @@ else:
 
     print("wrong IP Address")
     exit()
-
-
-
